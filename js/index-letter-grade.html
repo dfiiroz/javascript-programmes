@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letter Grade</title>
+</head>
+
+<body>
+  <h1 id="firoz">Hello Javascript</h1>
+
+  <script>
+    let marks = prompt("Enter Your Mark");
+
+    if (marks >= 101) {
+      document.getElementById("firoz").innerHTML = "This is not a valid marks, please enter marks between 0 to 100"
+    } else if (marks >= 80) {
+      document.getElementById("firoz").innerHTML = "You have got A+ ";
+      document.getElementById("firoz").style.color = "green";
+    } else if (marks >= 70) {
+      document.getElementById("firoz").innerHTML = "You have got A ";
+      document.getElementById("firoz").style.color = "teal";
+    } else if (marks >= 60) {
+      document.getElementById("firoz").innerHTML = "You have got A- ";
+      document.getElementById("firoz").style.color = "blue";
+    } else if (marks >= 50) {
+      document.getElementById("firoz").innerHTML = "You have got B ";
+      document.getElementById("firoz").style.color = "crimson";
+    } else if (marks >= 40) {
+      document.getElementById("firoz").innerHTML = "You have got C ";
+      document.getElementById("firoz").style.color = "gray";
+    } else if (marks >= 33) {
+      document.getElementById("firoz").innerHTML = "You have got D ";
+      document.getElementById("firoz").style.color = "yellow";
+    } else if (marks < 0) {
+      document.getElementById("firoz").innerHTML = "Enter Number Greater Than 0 ";
+      document.getElementById("firoz").style.color = "purple";
+    } else {
+      document.getElementById("firoz").innerHTML = "Alas ! You've failed";
+      document.getElementById("firoz").style.color = "red";
+    }
+  </script>
+</body>
+
+</html>
